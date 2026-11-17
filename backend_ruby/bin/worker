@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# Durable pool-build worker. Run in a separate terminal (requires Redis):
+#
+#   backend_ruby/bin/worker
+#
+# Mirrors `python -m app.worker` from the FastAPI backend.
+require_relative "../config/environment"
+
+CoachAnalyst::TaskQueue.run_worker

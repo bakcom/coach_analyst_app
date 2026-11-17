@@ -1,0 +1,26 @@
+# Rails runtime artifacts
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/tmp/pids/*
+!/tmp/pids/.keep
+/storage/*
+!/storage/.keep
+/public/assets
+
+# Bundler / gems
+/.bundle
+/vendor/bundle
+
+# Secrets — never commit the Rails master key or local credentials
+/config/master.key
+/config/credentials/*.key
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Parity harness output
+/tmp/parity
